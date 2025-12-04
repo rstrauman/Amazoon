@@ -1,0 +1,280 @@
+@import './container.css';
+
+.header-master-container, 
+.company-header-container, 
+.shoe-companies-header-container, 
+.company-logo-name,
+.delivery-flex,
+.icon-flex,
+.categories,
+.categories-flex,
+.products-container,
+.map-container,
+ul {
+    display: flex;
+}
+
+body {
+    background-color: #eaeaea;
+}
+
+    .company-logo-name h1 {
+        padding-right: 25px;
+    } 
+
+.header-master-container {
+    flex-direction: column; 
+}
+
+header {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #99eeee
+}
+
+ul {
+    list-style: none;
+}
+
+.company-header-container li {
+    padding: 20px 20px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+}
+
+.company-header-container li:hover {
+    background-color: #003f3f;
+    cursor: pointer;
+}
+
+header img {
+    padding-top: 5px;
+    border-radius: 50%;
+    height: 120px;
+}
+
+.company-logo-name {
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery-flex {
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.deliver-to {
+    font-size: 12px;
+    color: #d0d0d0;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.location-name {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+}
+
+#list {
+    color: #99eeee;
+}
+
+#pin {
+    font-size: 16px;
+}
+
+.search-container {
+    width: 50%;
+}
+
+.search-wrapper {
+    width: 90%;
+    position: relative;
+}
+
+.search-bar:hover {
+    border: 1px solid #a5102e;
+}
+
+.search-bar:focus {
+    border-color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background-color: #003f3f;
+    padding: 0 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 33px;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+.shoe-companies-header-container li {
+    padding: 0 15px;
+    transition: all 0.25s ease-in-out;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.shoe-companies-header-container li:hover {
+    background-color: #001b1b;
+    cursor: pointer;
+}
+
+.company-header-bg {
+    height: 40px;
+    background-color: #008a8a;
+}
+ 
+.shoe-companies-bg {
+    height: 20px;
+    background-color: #003f3f;
+}
+ 
+.company-header-container {
+    height: 40px;    
+    justify-content: space-between;
+    place-items: center;
+}
+ 
+.shoe-companies-header-container {
+    height: 20px;
+    justify-content: center;
+    place-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 4px 50px 4px 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+ 
+header {
+    color: #fff;
+}
+
+i {
+    font-size: 32px;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+#cart {
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    place-items: center;
+}
+
+.categories, .products-container, .map-container {
+    justify-content: space-evenly;
+    place-items: center;
+    padding: 20px 0;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.categories-flex {
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 5px;
+}
+
+.img-bg {
+    background-color: #003f3f;
+    padding: 25px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.img-bg:hover, .products-container img:hover {
+    scale: 1.1;
+}
+
+.categories-flex img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.products-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #008a8a;
+}
+
+.address {
+    background-color: #99eeee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: #003f3f;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    color: #fff;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #008a8a;
+}
+
+.map {
+    height: 400px;
+    width: 800px;
+    border-radius: 5px;
+    border: 2px solid #003f3f;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+    display: none;
+}
