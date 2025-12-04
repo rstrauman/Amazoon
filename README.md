@@ -4,7 +4,8 @@ Amazoon.ca is a fictional delivery-style web application created for an assignme
 The purpose of this project is to demonstrate the ability to retrieve a user’s device location, display it on an interactive map, and present the location in a professional, company-branded interface.
 
 ---
-
+[Live Demo](https://rstrauman.github.io/Amazoon/)
+---
 ## 🚚 Project Overview
 Amazoon.ca simulates a modern delivery platform similar to Amazon, DoorDash, or Uber Eats.  
 The homepage automatically detects the user’s current location and updates:
