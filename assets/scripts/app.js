@@ -1,5 +1,7 @@
 'use strict';
 
+const submit = document.getElementById('submit');
+
 mapboxgl.accessToken = "pk.eyJ1IjoicnN0cmF1bWFuIiwiYSI6ImNtaXF2czYxczBwcG0zZm9lNXQ3bHB3ZXkifQ.0rmmDZDQiDNXTAOIwOc3AA";
 
 const map = new mapboxgl.Map({
@@ -33,6 +35,7 @@ function disableMapControls(){
 
 function displayPosition(){
     if('geolocation' in navigator){
+        marker.remove();
         navigator.geolocation.getCurrentPosition(getLocation, errorHandler, options);
         disableMapControls();
     } else {
@@ -41,3 +44,5 @@ function displayPosition(){
 }
 
 displayPosition();
+
+submit.addEventListener('click', displayPosition);
